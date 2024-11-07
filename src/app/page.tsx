@@ -10,7 +10,6 @@ import Projects from '@/components/Projects'
 import Certifications from '@/components/Certifications'
 import Interests from '@/components/Interests'
 import Awards from '@/components/Awards'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -39,7 +38,6 @@ export default function Home() {
         <Certifications />
         <Interests />
         <Awards />
-        <Contact />
         <Footer />
       </div>
     </main>
