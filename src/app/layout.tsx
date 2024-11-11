@@ -1,16 +1,15 @@
 import type { Metadata } from 'next'
-import { Sora } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const sora = Sora({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800']
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Aadhil Syed - Portfolio',
-  description: 'Data Science · AI/ML · Full-Stack Development',
+  title: "Aadhil's Portfolio",
+  description: 'Personal portfolio showcasing my work in AI/ML and Full-Stack Development',
+  icons: {
+    icon: '/favicon.ico',
+  }
 }
 
 export default function RootLayout({
@@ -19,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={sora.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

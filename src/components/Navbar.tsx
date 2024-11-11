@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <span className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-500 text-transparent bg-clip-text">
-              Aadhil Syed
+              Aadhil&apos;s Portfolio
             </span>
           </div>
           
