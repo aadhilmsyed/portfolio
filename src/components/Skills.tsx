@@ -1,6 +1,6 @@
 'use client'
 
-import { FaCode, FaDatabase, FaTools, FaChartBar, FaCloud, FaBrain } from 'react-icons/fa'
+import { FaCode, FaTools, FaChartBar, FaCloud, FaBrain } from 'react-icons/fa'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -11,7 +11,6 @@ export default function Skills() {
     offset: ["start end", "end start"]
   })
 
-  // Create transforms for different elements
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.9, 1], [0, 1, 1, 0])
   const y = useTransform(scrollYProgress, [0, 0.2, 0.9, 1], [100, 0, 0, -100])
   const scale = useTransform(scrollYProgress, [0, 0.2, 0.9, 1], [0.8, 1, 1, 0.8])
@@ -21,61 +20,54 @@ export default function Skills() {
       icon: <FaCode className="w-6 h-6" />,
       title: "Programming Languages",
       items: [
-        "Python", "TypeScript", "JavaScript", "Java", 
-        "C++", "R", "SQL", "HTML/CSS", "Assembly",
-        "Swift", "Shell Scripting"
+        "Python", "TypeScript", "JavaScript",
+        "Java", "C", "C++", "R", "SQL",
+        "HTML/CSS", "Assembly", "Haskell"
       ]
     },
-    databases: {
-      icon: <FaDatabase className="w-6 h-6" />,
-      title: "Databases & Storage",
-      items: [
-        "PostgreSQL", "MongoDB", "Firebase",
-        "AWS RDS", "File Systems", "S3",
-        "RESTful APIs", "Distributed Systems",
-        "Block Storage", "Data Structures"
-      ]
-    },
-    cloud: {
+    cloudServicesAndDevOps: {
       icon: <FaCloud className="w-6 h-6" />,
-      title: "Cloud & DevOps",
+      title: "Cloud Services and DevOps",
       items: [
-        "AWS EC2", "AWS Cognito", "AWS CloudWatch",
-        "CI/CD", "Docker", "Git", "Linux",
-        "AWS SES", "Twilio", "Jenkins", "Kubernetes",
-        "Version Control", "AWS Lambda"
+        "AWS EC2", "PostgreSQL", "MySQL",
+        "File Systems", "AWS S3", "CI/CD",
+        "REST API", "Docker", "Git"
+      ]
+    },
+    programmingTools: {
+      icon: <FaTools className="w-6 h-6" />,
+      title: "Developer Tools",
+      items: [
+        "VS Code", "Eclipse", "Jupyter",
+        "IntelliJ", "Xcode", "GitHub", "Jira",
+        "Confluence", "PowerBI"
       ]
     },
     frameworks: {
       icon: <FaTools className="w-6 h-6" />,
-      title: "Frameworks & Tools",
+      title: "Frameworks & Libraries",
       items: [
-        "React", "Next.js", "Node.js", "Express",
-        "Discord API", "Pygame", "Jira", "PowerBI", 
-        "Confluence", "Flask", "Django", "Hugging Face",
-        "Beautiful Soup", "UIKit"
+        "React", "Next.js", "Node.js", "Chakra UI",
+        "Discord API", "Pygame", "CMake",
+        "Flask", "Django"
       ]
     },
     datascience: {
       icon: <FaChartBar className="w-6 h-6" />,
       title: "Data Science & ML",
       items: [
-        "PyTorch", "TensorFlow", "Scikit-learn",
-        "Pandas", "NumPy", "Matplotlib", "Seaborn",
-        "MLOps", "Data Analysis", "EDA",
-        "Statistical Analysis", "Regression",
-        "Web Scraping", "Data Visualization"
+        "PyTorch", "TensorFlow", "Scikit-learn", "Seaborn",
+        "Pandas", "NumPy", "Matplotlib",
+        "Keras", "NLTK", "SB3"
       ]
     },
     ai: {
       icon: <FaBrain className="w-6 h-6" />,
-      title: "AI & Algorithms",
+      title: "AI Services",
       items: [
-        "OpenAI APIs", "Google Gemini", "DALL-E",
-        "Minimax", "Alpha-Beta Pruning", "Monte Carlo",
-        "Neural Networks", "Deep Learning", "RLHF",
-        "LLMs", "Transformer Models", "BERT", "T5",
-        "Computer Vision", "NLP"
+        "OpenAI", "Google Gemini",
+        "DALL-E", "TTS", "Whisper", "Flan-T5",
+        "BERT", "GPT-4", "BloombergGPT"
       ]
     }
   }
