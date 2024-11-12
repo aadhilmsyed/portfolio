@@ -20,11 +20,11 @@ export default function Hero() {
         <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400">
           Aadhil Mubarak Syed
         </h1>
-        <p className="text-3xl text-gray-200 mb-8 font-light">
+        <p className="text-2xl text-gray-200 mb-8 font-light">
           Data Science · AI/ML · Full-Stack Development
         </p>
         <p className="text-gray-400 mb-10 text-lg">
-          San Francisco Bay Area
+          Empowering Technology Through AI-Driven Solutions
         </p>
         <div className="flex justify-center space-x-6 mt-6">
           <a 
