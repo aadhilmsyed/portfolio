@@ -1,6 +1,11 @@
+'use client'
+
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
+  const tagline = "Building AI-Driven Software for the World"
+
   return (
     <section 
       id="home" 
@@ -23,9 +28,40 @@ export default function Hero() {
         <p className="text-2xl text-gray-200 mb-8 font-light">
           Data Science · AI/ML · Full-Stack Development
         </p>
-        <p className="text-gray-400 mb-10 text-lg">
-          Empowering Technology Through AI-Driven Solutions
-        </p>
+        <motion.div 
+          className="text-gray-400 mb-10 text-lg h-8 overflow-hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <motion.span
+            initial={{ opacity: 1 }}
+            animate={{
+              width: "100%"
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeOut",
+              delay: 1
+            }}
+            className="inline-block"
+          >
+            {tagline.split("").map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.1,
+                  delay: (index * 0.1) + 1,
+                  ease: "easeOut"
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.span>
+        </motion.div>
         <div className="flex justify-center space-x-6 mt-6">
           <a 
             href="https://linkedin.com/in/aadhilmsyed" 

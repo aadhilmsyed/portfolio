@@ -11,6 +11,7 @@ import Certifications from '@/components/Certifications'
 import Interests from '@/components/Interests'
 import Awards from '@/components/Awards'
 import Footer from '@/components/Footer'
+import LoadingScreen from '@/components/LoadingScreen'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         backgroundAttachment: 'fixed'
       }}
     >
+      <LoadingScreen />
       <div 
         className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-green-500/10 to-teal-500/10 fixed"
         style={{ backdropFilter: 'blur(1px)' }}
