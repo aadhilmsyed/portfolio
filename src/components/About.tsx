@@ -50,24 +50,24 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p>
-              I am a Computer Science and Statistical Data Science student at UC Davis, combining my passion 
-              for AI/ML with full-stack development. With a strong foundation in mathematics and programming, 
-              I specialize in creating intelligent systems that solve real-world problems.
+              🚀 I&apos;m on a mission to build AI-driven software that makes a meaningful impact on the world. 
+              Currently, I&apos;m spearheading development for Read On, an AI-powered reading companion that helps 
+              students with learning disabilities access additional academic resources.
             </p>
             <p>
-              My experience ranges from leading development teams at the Muslim Tech Collaborative to 
-              implementing machine learning solutions at Seeloz Inc. I&apos;ve successfully delivered projects 
-              in library management systems, supply chain optimization, and educational technology, consistently 
-              achieving significant improvements in efficiency and user experience.
+              🎓 As a final-year CS + Stats DS student, I&apos;m deepening my knowledge in Algorithms, Computer 
+              Systems, Software Engineering, and Statistical Learning. I&apos;m also pursuing my interests in 
+              Generative AI, Natural Language Processing, and Human-Computer Interaction through various 
+              certificatons.
             </p>
             <p>
-              Outside of technology, I&apos;m an aviation enthusiast and competitive speedcuber, hobbies that have 
-              enhanced my analytical thinking and ability to perform under pressure. These diverse interests 
-              contribute to my unique approach to problem-solving in technology.
+              🛩️ Beyond technology, I&apos;m an aviation enthusiast and competitive speedcuber with a 10.96s PB 
+              single. I also run a YouTube channel featuring my endeavors in GeoFS, a free browser-based 
+              flight simulator, in which I have accumulated well over 6,000 hours of flight time.
             </p>
             <p>
-              I&apos;m currently seeking opportunities where I can apply my expertise in Data Science, Machine Learning, 
-              and Full-Stack Development to create innovative solutions that make a meaningful impact.
+              🤝 I&apos;m seeking opportunities in Full-Stack Development, AI/ML, and Data Science. If you&apos;re 
+              looking to collaborate on impactful projects or share insights, feel free to reach out below!
             </p>
           </motion.div>
         </div>

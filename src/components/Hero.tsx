@@ -1,10 +1,17 @@
 'use client'
 
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaChevronDown } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
   const tagline = "Building AI-Driven Software for the World"
+
+  const scrollToNextSection = () => {
+    const aboutSection = document.getElementById('about')
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <section 
@@ -62,28 +69,30 @@ export default function Hero() {
             ))}
           </motion.span>
         </motion.div>
-        <div className="flex justify-center space-x-6 mt-6">
-          <a 
-            href="https://linkedin.com/in/aadhilmsyed" 
-            className="px-8 py-3 bg-gradient-to-r from-gray-200 to-gray-300 hover:from-white hover:to-gray-200 
-                     rounded-full transition-all duration-300 text-gray-800 font-semibold shadow-lg hover:shadow-white/30
-                     flex items-center gap-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-xl" /> LinkedIn
-          </a>
-          <a 
-            href="https://github.com/aadhilmsyed" 
-            className="px-8 py-3 bg-gradient-to-r from-gray-200 to-gray-300 hover:from-white hover:to-gray-200 
-                     rounded-full transition-all duration-300 text-gray-800 font-semibold shadow-lg hover:shadow-white/30
-                     flex items-center gap-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-xl" /> GitHub
-          </a>
-        </div>
+      </div>
+      
+      {/* Scroll Prompt */}
+      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3">
+        <p className="text-gray-200 text-base font-medium">
+          Scroll to Read More About Me
+        </p>
+        <motion.button
+          onClick={scrollToNextSection}
+          className="text-gray-400 hover:text-emerald-400 transition-colors"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ 
+            opacity: 1, 
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            delay: 3
+          }}
+          aria-label="Scroll to next section"
+        >
+          <FaChevronDown className="text-3xl" />
+        </motion.button>
       </div>
     </section>
   )

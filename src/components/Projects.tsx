@@ -18,42 +18,58 @@ export default function Projects() {
     {
       title: "Read On: AI-Powered Reading Companion",
       link: "github.com/aadhilmsyed/ReadOn",
-      logo: "/book.png",
+      logo: "/ReadOn.png",
       date: "Oct 2024",
-      abstract: "An innovative educational platform that leverages cutting-edge AI technologies to create personalized learning materials for special needs education, reducing preparation time by 85% while improving learning outcomes.",
-      description: "Read On emerged from a deep understanding of the challenges faced by special needs educators in creating personalized learning materials. Using Next.js 14 and TypeScript, I built a platform that transforms the way educational content is created and delivered. The system's four specialized learning modes - phonetics, visualization, comprehension, and read aloud - were carefully designed to address different learning styles and needs. By integrating advanced AI services like OpenAI's DALL-E 3 and Google Gemini, the platform can generate highly relevant and accurate educational content in minutes rather than hours. The real impact became clear during testing, where we saw a 40% improvement in reading comprehension scores. What makes this project particularly meaningful is its practical application - educators can now focus more time on direct student interaction rather than material preparation, leading to better educational outcomes for students with diverse learning needs."
-    },
-    {
-      title: "ECS 150 Final Project: Distributed File System",
-      link: "github.com/amubaraksyed/DistributedFileSystem",
-      logo: "/DFS.png",
-      date: "Jun 2024",
-      abstract: "A robust distributed file system implementation that handles concurrent access for thousands of files while maintaining sub-50ms response times, mirroring the functionality of enterprise solutions like Amazon S3.",
-      description: "Building a distributed file system from scratch was an exciting challenge that pushed the boundaries of my systems programming knowledge. I focused on creating a system that could not only handle massive scale - managing up to 10,000 files across 100,000+ disk blocks - but also maintain exceptional performance under load. The architecture I designed uses a sophisticated block allocation system with 4KB blocks, carefully managing disk space while ensuring fast access times. One of the most rewarding aspects was developing the command-line utilities that make the system accessible and practical. These tools (ds3ls, ds3cat, ds3bits) provide familiar interfaces for users while handling complex operations behind the scenes. The RESTful API layer ensures reliable concurrent access, making the system not just a academic exercise but a practical solution for distributed storage needs."
-    },
-    {
-      title: "Predicting the 2024 NBA Champion with Machine Learning",
-      link: "github.com/amubaraksyed/NBAChampion",
-      logo: "/nba.png",
-      date: "Jun 2024",
-      abstract: "A deep learning project that successfully predicted the 2024 NBA champion using a sophisticated neural network trained on 30 years of historical data and over 50 performance metrics.",
-      description: "Working with a talented team of four, I embarked on an exciting journey to combine my passion for basketball with machine learning. We developed a deep neural network using TensorFlow that could predict NBA champions with remarkable accuracy. The project began with extensive data collection, where I used Beautiful Soup to scrape historical team performance data spanning three decades. Through careful exploratory data analysis using Matplotlib and Seaborn, we identified key performance indicators that had strong correlations with championship success. The visualization of metrics like 3-point percentage and free throw rate revealed fascinating patterns in championship DNA. Our model's training process was rigorous, and the results were impressive - achieving over 90% accuracy in testing and, most excitingly, correctly predicting the 2024 NBA champion. To make our findings accessible, we created an interactive HTML interface using Flask and Django, accompanied by detailed documentation including a comprehensive research report and demonstration video. This project perfectly merged statistical analysis with modern web technologies, creating a tool that both basketball fans and data scientists could appreciate."
-    },
-    {
-      title: "Connect-4 AI with Optimized AI Algorithms",
-      link: "github.com/aadhilmsyed/Connect4-AI",
-      logo: "/C4.png",
-      date: "Apr 2024",
-      abstract: "An intelligent Connect Four game engine that showcases the power of advanced search algorithms, achieving unbeatable performance through optimized Minimax and Alpha-Beta pruning implementations.",
-      description: "This project emerged from my fascination with game theory and artificial intelligence. I set out to create not just another Connect Four game, but a sophisticated AI opponent that could demonstrate the real-world application of theoretical concepts. The heart of the system lies in its implementation of Minimax and Alpha-Beta pruning algorithms, which I meticulously optimized to make decisions within 500 milliseconds. The results were remarkable - the AI achieved a perfect win rate against its Monte Carlo counterpart in our testing phase. To make the project more accessible and educational, I developed a flexible command-line interface that allows users to experiment with different AI opponents and visualization options. The system's architecture, built with NumPy for efficient board state management and Pygame for visualization, creates an engaging platform for both casual players and those interested in AI strategy development."
+      achievements: [
+        "Developed an AI-powered educational platform using Next.js 14 and TypeScript, enabling special needs educators to generate personalized materials in under 2 minutes, reducing preparation time by up to 85% and effectively supporting diverse learning styles across classrooms.",
+        "Designed an accessible and intuitive interface using React with 4 specialized learning modes — phonetics, visualization, comprehension, and read aloud — achieving a 40% improvement in reading comprehension in sample testing and reducing lesson preparation time by 87%.",
+        "Integrated cutting-edge generative backend AI services using Python and Node.js, including OpenAI DALL-E 3 and TTS and Google Gemini, to fully automate resource creation with a 95% content accuracy rate, significantly expanding support for varied learning needs."
+      ]
     },
     {
       title: "Events CoPilot: Discord Bot for Flight Simulation Server",
       link: "github.com/aadhilmsyed/EventsBot",
       logo: "/GE.png",
       date: "Oct 2023",
-      abstract: "A sophisticated Discord bot that revolutionized flight logging and community management for a 1,000+ member aviation simulation server through automated tracking and real-time weather data integration.",
-      description: "What started as a solution for our growing flight simulation community turned into a comprehensive automation platform. I engineered Events CoPilot to streamline our server operations, focusing on making flight logging seamless and efficient. The bot now handles everything from automatic role assignments to real-time flight tracking with remarkable 99% accuracy. One of the most exciting features I implemented was the integration of live METAR weather data, which pilots can now access instantly instead of navigating through external websites. By leveraging AWS for hosting and PostgreSQL for data management, I ensured the bot maintains consistent uptime and reliability. The impact was immediate and significant - our manual workload dropped dramatically, and the community's engagement increased substantially. Through careful documentation and user-friendly features, we've seen the server grow and thrive, with members actively using the bot's capabilities for their virtual flying adventures."
+      achievements: [
+        "Engineered a custom Discord bot using Python and the Discord API for a 1,000+ member aviation community, automating real-time flight logging with 99% accuracy and boosting role assignment efficiency by 92%, reducing manual workload.",
+        "Led end-to-end execution, utilizing GitHub for CI/CD and AWS EC2 for cloud-based hosting solutions, achieving 99.9% uptime and an 87% reduction in response latency for global users; integrated PostgreSQL to ensure 94% data accuracy, delivering a scalable solution.",
+        "Integrated real-time METAR data retrieval through weather report API requests, reducing report access time by 96% and enhancing accessibility by 14%; created technical and non-technical documentation, improving usability by 600% and expanding server reach by 22%."
+      ]
+    },
+    {
+      title: "Connect-4 AI with Optimized AI Algorithms",
+      link: "github.com/aadhilmsyed/Connect4-AI",
+      logo: "/C4.png",
+      date: "Apr 2024",
+      achievements: [
+        "Developed an AI Connect Four game using Python with advanced Minimax and Alpha-Beta Pruning algorithms, achieving a flawless 100% win rate (20/20) for AlphaBetaAI against Monte Carlo AI, demonstrating the power and effectiveness of optimized search strategies.",
+        "Implemented efficient data handling with NumPy and interactive visualization with Pygame, optimizing AI operations to consistently complete within 500 ms of CPU time, ensuring responsive gameplay and real-time decision-making under tight constraints.",
+        "Built a highly customizable command-line interface with argparse, allowing users to seamlessly configure game settings, select between AI or human players, and enable visualizations, enhancing overall flexibility, usability, and adaptability for various simulation and testing modes."
+      ]
+    },
+    {
+      title: "ECS 150 Final Project: Distributed File System",
+      link: "github.com/amubaraksyed/DistributedFileSystem",
+      logo: "/DFS.png",
+      date: "Jun 2024",
+      achievements: [
+        "Developed a distributed file server capable of managing up to 10,000 files and directories, providing concurrent access with over 99% API response reliability through a RESTful API supporting read, write, and delete operations, similar to Amazon S3.",
+        "Engineered key system components to efficiently handle HTTP requests and manage 4KB block-size disk allocations and inode structures across 100,000+ simulated disk blocks, consistently achieving response times under 50ms for typical operational demands.",
+        "Built command-line utilities (ds3ls, ds3cat, ds3bits) to facilitate file system management; enabled efficient retrieval and metadata access, processing directory entries sorted via std::strcmp to support large-scale file navigation and retrieval with accuracy up to 98%."
+      ]
+    },
+    {
+      title: "Predicting the 2024 NBA Champion with Machine Learning",
+      link: "github.com/amubaraksyed/NBAChampion",
+      logo: "/nba.png",
+      date: "Jun 2024",
+      achievements: [
+        "Collaborated with a team of 4 students to build a deep neural network (DNN) model using TensorFlow to predict the NBA champion based on 50+ regular-season team performance metrics, achieving over 90% accuracy in testing and correctly predicting the 2024 NBA champion.",
+        "Conducted exploratory data analysis (EDA) on historical data from the past 30 NBA seasons, utilizing Matplotlib and Seaborn to visualize 20+ statistical features such as 3-point percentage and free throw rate, identifying metrics with strong correlations to championship likelihood.",
+        "Employed NumPy and Pandas for data processing to clean and organize extensive datasets, and used Beautiful Soup for web scraping to gather and compile historical team performance metrics, enhancing the model's accuracy and robustness.",
+        "Produced a comprehensive 9-page research report detailing methodology, EDA findings, and model performance, along with an HTML interface built with Flask and Django, a 5-minute demonstration video, and a GitHub repository for further exploration and replication."
+      ]
     }
   ]
 
@@ -108,16 +124,18 @@ export default function Projects() {
                       </a>
                       <p className="text-gray-400">{project.date}</p>
                     </div>
-                    <p className="text-gray-300 mt-2 italic">
-                      {project.abstract}
-                    </p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-gray-300 leading-relaxed">
-                {project.description}
-              </p>
+              <ul className="space-y-4 text-gray-300 leading-relaxed">
+                {project.achievements.map((achievement, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-emerald-400 mt-1">✦</span>
+                    <span>{achievement}</span>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
