@@ -27,7 +27,7 @@ export default function ResearchPublications() {
         <div className="w-full px-6 md:px-12 lg:px-16">
           <PageHeader 
             title="Research & Publications"
-            description="Explore my academic research work and published papers in artificial intelligence and machine learning."
+            description="Check out some of my previous research publications as learn about my ongoing research projects."
           />
           <Research />
         </div>

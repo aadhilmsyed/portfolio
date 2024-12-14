@@ -28,7 +28,7 @@ export default function ExperienceProjects() {
         <div className="w-full px-6 md:px-12 lg:px-16">
           <PageHeader 
             title="Experience & Projects"
-            description="Explore my professional journey and the innovative projects I've developed in AI, machine learning, and software development."
+            description="Explore my professional journey and the innovative projects I've developed in Data Science, AI, ML, and Software Engineering."
           />
           <Experience />
           <Projects />

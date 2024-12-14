@@ -27,8 +27,8 @@ export default function DegreesCertificates() {
         <Navbar />
         <div className="w-full px-6 md:px-12 lg:px-16">
           <PageHeader 
-            title="Education & Achievements"
-            description="Discover my academic journey, professional certifications, and notable awards in the field of technology and innovation."
+            title="Degrees & Certificates"
+            description="Learn about my educational background, as well as my academic endeavors outside of the classroom."
           />
           <Education />
           <Certifications />
