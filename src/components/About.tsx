@@ -66,8 +66,9 @@ export default function About() {
               flight simulator, in which I have accumulated well over 6,000 hours of flight time.
             </p>
             <p>
-              🤝 I&apos;m seeking opportunities in Full-Stack Development, AI/ML, and Data Science. If you&apos;re 
-              looking to collaborate on impactful projects or share insights, feel free to reach out below!
+              🤝 Want to get in touch or looking for a dedicated team member for an impactful project? I&apos;m 
+              always open to new opportunities in Full-Stack Development, AI/ML, and Data Science. If you&apos;re 
+              looking to collaborate or just want toshare insights, feel free to reach out below!
             </p>
           </motion.div>
         </div>

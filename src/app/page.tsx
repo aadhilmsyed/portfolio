@@ -32,7 +32,7 @@ export default function Home() {
           <div className="text-center py-12 animate-bounce">
             <p className="text-2xl font-semibold bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 text-transparent bg-clip-text 
               shadow-lg p-6 rounded-lg backdrop-blur-sm border border-emerald-500/20 inline-block">
-              Check out the navigation bar above to explore more about my work and experiences! 👆
+              Check out the navigation bar above to explore more about my accomplishments! 👆
             </p>
           </div>
           <Skills />
