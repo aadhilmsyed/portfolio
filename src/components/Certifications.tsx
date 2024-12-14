@@ -24,7 +24,7 @@ export default function Certifications() {
     {
       title: "Data Science Fundamentals with Python & SQL Specialization",
       organization: "IBM",
-      logo: "/ibm.png",
+      logo: "/IBM.png",
       date: "Jun 2023"
     },
     {
