@@ -7,6 +7,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navItems = [
+    { href: '/', label: 'Home' },
     { href: '/degrees-certificates', label: 'Degrees & Certificates' },
     { href: '/experience-projects', label: 'Experience & Projects' },
     { href: '/research-publications', label: 'Research & Publications' },
@@ -25,7 +26,7 @@ export default function Navbar() {
               Aadhil&apos;s Portfolio
             </Link>
           </div>
-          <div className="flex items-center gap-2 md:gap-4 lg:gap-6">
+          <div className="flex items-center gap-1 md:gap-3 lg:gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
