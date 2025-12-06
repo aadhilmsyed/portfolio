@@ -1,12 +1,12 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef, useState, type RefObject } from 'react'
 
 export default function Contact() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: containerRef as RefObject<HTMLElement>,
     offset: ["start end", "end start"]
   })
 

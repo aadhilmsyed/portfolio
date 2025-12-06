@@ -2,12 +2,12 @@
 
 import { FaCode, FaTools, FaChartBar, FaCloud, FaBrain } from 'react-icons/fa'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, type RefObject } from 'react'
 
 export default function Skills() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: containerRef as RefObject<HTMLElement>,
     offset: ["start end", "end start"]
   })
 

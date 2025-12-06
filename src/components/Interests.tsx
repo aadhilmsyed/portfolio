@@ -2,12 +2,12 @@
 
 import { FaPlane, FaCube, FaCode, FaChess } from 'react-icons/fa'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, type RefObject } from 'react'
 
 export default function Interests() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: containerRef as RefObject<HTMLElement>,
     offset: ["start end", "end start"]
   })
 

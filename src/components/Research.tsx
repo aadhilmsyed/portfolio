@@ -1,13 +1,13 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef, useState, type RefObject } from 'react'
 import { FaFilePdf, FaChevronDown, FaChevronRight } from 'react-icons/fa'
 
 export default function Research() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: containerRef as RefObject<HTMLElement>,
     offset: ["start end", "end start"]
   })
 
@@ -209,12 +209,12 @@ export default function Research() {
           Previous Publications
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col space-y-8">
           {publications.map((paper, index) => (
             <motion.div 
               key={index}
               className="bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-lg shadow-md hover:shadow-lg 
-                transition-all duration-300 border border-gray-600 flex flex-col h-full"
+                transition-all duration-300 border border-gray-600"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
